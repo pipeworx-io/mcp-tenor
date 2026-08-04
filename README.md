@@ -1,18 +1,26 @@
-# mcp-tenor
+# @pipeworx/tenor
 
-Tenor v2 MCP.
+[Tenor v2](https://developers.google.com/tenor/guides/quickstart) MCP — animated GIFs, stickers, search. Free Google Cloud key.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_TENOR_KEY`. BYO: `?_apiKey=…`.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | GIF/sticker search. |
-| `featured` | Featured GIFs. |
-| `search_suggestions` | Suggestions. |
-| `autocomplete` | Autocomplete. |
-| `posts` | Posts by id (comma-sep). |
+- `search(q, locale?, contentfilter?, media_filter?, ar_range?, random?, limit?, pos?, client_key?)` — GIF/sticker search
+- `featured(locale?, contentfilter?, media_filter?, ar_range?, limit?, pos?)` — featured GIFs
+- `categories(locale?, type?, contentfilter?)` — categories
+- `search_suggestions(q, locale?, limit?, client_key?)` — autocomplete
+- `autocomplete(q, locale?, limit?, client_key?)` — search autocomplete
+- `trending_terms(locale?, limit?)` — trending search terms
+- `posts(ids, media_filter?, client_key?)` — specific posts by id
+
+## Data source
+
+`https://tenor.googleapis.com/v2`
 
 ## Quick Start
 
@@ -28,7 +36,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +60,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
