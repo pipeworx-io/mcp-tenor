@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tenor",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tenor v2 MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tenor",
     "gatewaySlug": "tenor",
-    "sourceHash": "v1-2a4553b0dd7c52e9b19e7251364ea683964495c154d692e680602ed24ca1a8f3",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-3457463a599fc8f9f0d76d700bd06b7d06f4bd25a4da3a7c04835192336f1d1f",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
